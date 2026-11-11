@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, interactive-widget=resizes-content">
+  <meta name="color-scheme" content="dark">
+  <title>AI 단체방</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="ttl">AI 단체방</div>
+    <div id="net" class="net"></div>
+    <button id="btnSettings" class="icon" aria-label="설정">⚙</button>
+  </header>
+
+  <main id="list" aria-live="polite"></main>
+
+  <section id="statusPanel">
+    <button id="statusToggle" class="stoggle" type="button">AI 상태 ▾</button>
+    <div id="statusBody">
+      <div id="tip"></div>
+      <div id="status"></div>
+    </div>
+  </section>
+
+  <div id="chips"></div>
+
+  <form id="composer" autocomplete="off">
+    <textarea id="input" rows="1" placeholder="메시지  (@이름 으로 한 명만 부르기)"></textarea>
+    <button id="btnStop" type="button" hidden aria-label="중지">■</button>
+    <button id="btnSend" type="submit">보내기</button>
+  </form>
+
+  <div id="sheet" hidden>
+    <div class="sheet-head">
+      <b>설정</b>
+      <button id="btnCloseSheet" class="icon" aria-label="닫기">✕</button>
+    </div>
+    <div id="sheetBody"></div>
+  </div>
+
+  <script src="logic.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+{
+  "appId": "com.groupai.chat",
+  "appName": "AI 단체방",
+  "webDir": "www",
+  "android": {
+    "allowMixedContent": true
+  },
+  "plugins": {
+    "CapacitorHttp": {
+      "enabled": false
+    }
+  }
+}

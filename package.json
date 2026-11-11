@@ -1,0 +1,14 @@
+{
+  "name": "ai-group-chat",
+  "version": "1.0.0",
+  "private": true,
+  "description": "AI 단체방 - 여러 무료 AI와 로컬 AI가 한 방에서 대화하는 안드로이드 앱",
+  "scripts": {
+    "test": "node --test test/logic.test.js"
+  },
+  "dependencies": {
+    "@capacitor/android": "^6.2.0",
+    "@capacitor/cli": "^6.2.0",
+    "@capacitor/core": "^6.2.0"
+  }
+}
